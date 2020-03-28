@@ -2,3 +2,10 @@
 [user]
 	name = odingsy
 	email = ggsygsy@hotmail.com
+[diff]
+        tool = diffmerge
+[merge]
+        tool = diffmerge
+[mergetool "diffmerge"]
+        cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+        trustExitCode = true

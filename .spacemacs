@@ -352,12 +352,14 @@ you should place your code here."
                     (find-file "/Users/shiyuanguo/Dropbox/org_files/org_life/voca.org")))
 
 
+  (require 'org-tempo)
+  ;; (add-to-list 'org-structure-template-alist
+  ;;              '("r" "#+BEGIN_SRC R :async :results output \n?\n#+END_SRC"))
 
   ;; (add-to-list 'org-structure-template-alist
-  ;;              '("r" "#+BEGIN_SRC R :results output \n?\n#+END_SRC"))
-
+  ;;              '("R" "#+BEGIN_SRC R :async :Results output graphics :file ./test.png :exports results \n?\n#+END_SRC"))
   ;; (add-to-list 'org-structure-template-alist
-  ;;              '("R" "#+BEGIN_SRC R :results output graphics :file ./test.png :exports results \n?\n#+END_SRC"))
+  ;;              '("sh" "#+BEGIN_SRC sh :async \n?\n#+END_SRC"))
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((calc . t)
@@ -379,7 +381,7 @@ you should place your code here."
   ;; (add-to-list 'org-src-lang-modes (quote ("Graphviz" . Graphviz)))
   ;; disable confirmation
   (defun odin/org-confirm-babel-evaluate (lang body)
-    (not (or (string= lang "latex") (string= lang "R") (string= lang "python") (string= lang "shell") (string= lang "emacs-lisp"))))
+    (not (or (string= lang "latex") (string= lang "R") (string= lang "python") (string= lang "shell")  (string= lang "sh") (string= lang "emacs-lisp"))))
   (setq org-confirm-babel-evaluate 'odin/org-confirm-babel-evaluate)
   (require 'ob-async)
 
