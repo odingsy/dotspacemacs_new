@@ -3,3 +3,7 @@
 !.spacemacs
 !.gitignore
 !.gitconfig
+
+!.zshrc
+!.zprofile_anaconda
+!.zprofile
