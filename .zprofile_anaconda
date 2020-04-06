@@ -19,3 +19,8 @@ fi
 unset __conda_setup
 
 # <<< conda init <<<
+
+alias bioon="conda activate bioinfo"
+alias biooff="conda deactivate"
+
+
