@@ -316,11 +316,25 @@ you should place your code here."
   (setq delete-by-moving-to-trash t)
   (setq org-special-ctrl-a/e t)
   (setq org-special-ctrl-k t)
-  (bind-key "<s-return>" 'toggle-frame-fullscreen)
+  (bind-key "<A-return>" 'toggle-frame-fullscreen)
   (setq org-image-actual-width 400)
   (setq org-agenda-files '("/Users/shiyuanguo/Library/Mobile Documents/com~apple~CloudDocs/agenda"
                            "/Users/shiyuanguo/Library/Mobile Documents/com~apple~CloudDocs/integratedLearning"
                            "/Users/shiyuanguo/Library/Mobile Documents/com~apple~CloudDocs/integratedLearning/bioconductor"))
+  (defun formatted-copy ()
+    "Export region to HTML, and copy it to the clipboard."
+    (interactive)
+    (save-window-excursion
+      (let* ((buf (org-export-to-buffer 'html "*Formatted Copy*" nil nil t t))
+             (html (with-current-buffer buf (buffer-string))))
+        (with-current-buffer buf
+          (shell-command-on-region
+           (point-min)
+           (point-max)
+           "textutil -stdin -format html -convert rtf -stdout | pbcopy"))
+        (kill-buffer buf))))
+
+  (global-set-key (kbd "A-w") 'formatted-copy)
 
   (global-set-key (kbd "S-<f10>")
                   (lambda ()
