@@ -19,9 +19,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Extend the program search PATH and add the ~/bin folder.
 export PATH=~/bin:$PATH
 
-# Makes the prompt much more user friendly.
-# But I do agree that the command to set it up looks a bit crazy.
-export PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$ '
 
 # This is necessary for the sort to work correctly.
 export LC_ALL=C
