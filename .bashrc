@@ -21,6 +21,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
 alias bioon="conda activate bioinfo"
 alias biooff="conda deactivate"
+alias grep="ggrep"
 
 
 # Extend the program search PATH and add the ~/bin folder.
