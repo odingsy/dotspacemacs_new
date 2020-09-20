@@ -1,0 +1,4 @@
+* Notes about interplay of zsh/bash dotfiles  
+- ".zprofile" is the base and it should not contains the conda lines.  
+- ".zshrc": sources in ".zprofile"
+- ".bash_profile" sources in ".bashrc", which sources in ".zprofile". 
