@@ -1,15 +1,12 @@
 *
 
+!README
+
 !.spacemacs
 !.gitignore
 !.gitconfig
 
-!.zshrc
-!.zprofile_anaconda
 !.zprofile
-
-!.bashrc
-!.bash_profile
 
 !.R/snippets/
 .Rproj.user
