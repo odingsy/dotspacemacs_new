@@ -3,6 +3,7 @@
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
+alias gs='git status'
 
 alias cdint='cd /Users/shiyuanguo/Library/Mobile\ Documents/com~apple~CloudDocs/integratedLearning'
 alias ll='ls -alhG'
