@@ -15,7 +15,7 @@ snippet b_page
 	:::
 	::::::
 	
-snippet b_header
+snippet beamer
 	---
 	title: 
 	subtitle: 
@@ -38,6 +38,29 @@ snippet b_header
 	bibliography: ~Dropbox/bibliography/ref.bib
 	---
 	
+	
+	
+snippet html2
+	---
+	title: 
+	subtitle: 
+	author: |
+	  | Shiyuan Guo
+	  | sguo039\@ucr.edu
+	date:
+	output:
+		bookdown::html_document2:
+			fig_caption: yes
+			toc: yes
+			toc_depth: 2
+	nocite: |
+	  @
+	fontsize: 12pt
+	csl: ~/Dropbox/bibliography/cell.csl
+	bibliography: ~Dropbox/bibliography/ref.bib
+	editor_options: 
+	  chunk_output_type: console
+	---
 	
 snippet ![
 	![${1:label}](${2:location})
