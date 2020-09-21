@@ -7,6 +7,7 @@
 !.gitconfig
 
 !.zprofile
+!.bash_profile
 
 !.R/snippets/
 .Rproj.user

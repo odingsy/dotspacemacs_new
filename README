@@ -1,4 +1,4 @@
-* Notes about interplay of zsh/bash dotfiles  
-- ".zprofile" is the base and it should not contains the conda lines.  
-- ".zshrc": sources in ".zprofile"
-- ".bash_profile" sources in ".bashrc", which sources in ".zprofile". 
+# Notes about interplay of zsh/bash dotfiles. 
+- source sequence: .bashrc -> .bash_profile -> .zshrc -> .zprofile
+- git track ".bash_profile" and ".zprofile" as common across both computer. 
+- ".bashrc" and ".zshrc" are unique configurations (conda, perl config)
