@@ -1,13 +1,17 @@
-*
-
-!README
+/*
 
 !.spacemacs
 !.gitignore
 !.gitconfig
-
 !.zprofile
 !.bash_profile
-
+!.Rproj.user
+.R/*
+!.R/
+!README
+.R/snippets/*
+!packagelist/
+packagelist/*
+!packagelist/condalist.yml
 !.R/snippets/
-.Rproj.user
+!packagelist/brewlist 
