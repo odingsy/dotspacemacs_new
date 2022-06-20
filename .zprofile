@@ -6,9 +6,10 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ll='ls -alhG'
 alias grep="ggrep"
+alias python='python3'
 
 # Extend the program search PATH and add the ~/bin folder, brew_doctor
-export PATH=~/bin:$PATH
+# export PATH=~/bin:$PATH
 
 # This is necessary for the sort to work correctly.
 export LC_ALL=C
@@ -36,12 +37,9 @@ git() {
 
 # cluster
 alias cdint='cd /Users/shiyuanguo/Library/Mobile\ Documents/com~apple~CloudDocs/integratedLearning'
-alias ucr='ssh -XY odingsy@cluster.hpcc.ucr.edu'
+#alias ucr='ssh -XY odingsy@cluster.hpcc.ucr.edu'
 
 
-
-
-
-
-
-
+# conda environment. 
+alias bioon="conda activate bioinfo"
+alias biooff="conda deactivate"
